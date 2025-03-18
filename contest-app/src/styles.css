@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  width: auto;
+}
+
+.dark {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+/* General Dashboard Styles */
+.dashboard {
+  min-height: 100vh;
+  background-color: #f7fafc;
+  color: #1a202c;
+  transition: all 0.3s;
+}
+
+.dark .dashboard {
+  background-color: #1a202c;
+  color: #f7fafc;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  gap: 12px;
+  background-color: #2d4848;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .header {
+  background-color: #2d3748;
+}
+
+.center-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Button Styles */
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contest-title {
+  display: flex;
+  justify-content: center;
+  /* background-color: #42e19c; */
+  border: #2b6cb0;
+  border-radius: 12px;
+  padding: 5px;
+  color: white;
+  font-size:xxx-large;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "Tektur", sans-serif;
+  
+}
+
+.contest-button:hover {
+  background-color: #3182ce;
+}
+
+.dark .contest-button {
+  background-color: #2b6cb0;
+}
+
+.dark .contest-button:hover {
+  background-color: #2c5282;
+}
+
+.theme-toggle {
+  /* background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); */
+  padding: 8px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  transition: transform 0.5s ease;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+.sun {
+  color: #fdd835;
+}
+
+.moon {
+  color: #90caf9;
+}
+
+
+/* Platforms Section */
+/* Platform Buttons */
+.platform-buttons {
+  display: flex;
+  justify-content:space-evenly;
+  gap: 12px;
+  padding: 16px;
+  background-color: #628eba;
+}
+
+.dark .platform-buttons {
+  background-color: #4a5568;
+}
+
+/* Default Button Styling */
+.platform-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific Platform Colors */
+.platform-button.leetcode {
+  font-size: larger;
+  font-family: "Tektur", sans-serif;
+  width: fit-content;
+  background-color: #FFA116; /* LeetCode Orange */
+}
+
+.platform-button.codechef {
+  font-size: larger;
+  font-family: "Tektur", sans-serif;
+  width: fit-content;
+  background-color: #5B4638; /* CodeChef Brown */
+}
+
+.platform-button.codeforces {
+  font-size: larger;
+  font-family: "Tektur", sans-serif;
+  width: fit-content;
+  background-color: #1F8ACB; /* CodeForces Blue */
+}
+
+.platform-button.all {
+  font-size: larger;
+  font-family: "Tektur", sans-serif;
+  width: fit-content;
+  background-color: #4bb04e; /* Green for All Platforms */
+}
+
+/* Hover Effect */
+.platform-button:hover {
+  opacity: 0.8;
+}
+
+/* Active Button Styling */
+.platform-button.active {
+  border: 2px solid #000;
+}
+
+/* Dark Mode */
+.dark .platform-button {
+  filter: brightness(0.9);
+}
+
+
+/* Theme Toggle */
+.theme-toggle {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+

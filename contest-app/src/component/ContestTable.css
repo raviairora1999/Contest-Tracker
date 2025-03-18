@@ -1,0 +1,243 @@
+/* Table Container */
+.table-container {
+  margin: 20px 0;
+  padding: 16px;
+  background-color: var(--table-bg, #fff);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Tektur", sans-serif;
+}
+
+.dark .table-container {
+  background-color: #2d3748;
+  color: #f7fafc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styling */
+.table-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--title-border, #ccc);
+  color: var(--title-color, #333);
+  font-family: "Tektur", sans-serif;
+}
+
+.dark .table-container h2 {
+  color: #e2e8f0;
+  border-color: #4a5568;
+}
+
+/* Style for Upcoming Contests Title */
+.table-container h2:contains("Upcoming") {
+  color: #28a745;
+  border-color: #28a745;
+}
+
+.dark .table-container h2:contains("Upcoming") {
+  color: #38c172;
+  border-color: #38c172;
+}
+
+/* Style for Past Contests Title */
+.table-container h2:contains("Past") {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.dark .table-container h2:contains("Past") {
+  color: #e53e3e;
+  border-color: #e53e3e;
+}
+
+/* Contest Table */
+.contest-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contest-table th,
+.contest-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.dark .contest-table th,
+.dark .contest-table td {
+  border-color: #4a5568;
+}
+
+.contest-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.dark .contest-table th {
+  background-color: #4a5568;
+  color: #f7fafc;
+}
+
+.contest-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.dark .contest-table tr:nth-child(even) {
+  background-color: #2c2f36;
+}
+
+/* No Data Message */
+.no-data {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-style: italic;
+}
+
+.dark .no-data {
+  color: #a0aec0;
+}
+/* bell icon css */
+
+.bell-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffa116; /* Default fancy gold */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.bell-icon:hover {
+  color: #ffcc00; /* Bright yellow on hover */
+  transform: scale(1.2);
+}
+
+.reminder-active {
+  color: #ff6b00 !important; /* Darker orange when reminder is set */
+  fill: #ff6b00 !important; /* Fully filled with dark orange */
+}
+
+
+
+/* Overlay for Modal */
+/* Modal Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal {
+  background: linear-gradient(135deg, #2b6cb0, #3182ce);
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  position: relative;
+  color: #f7fafc;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Title */
+.modal h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Reminder Options */
+.reminder-options button,
+.confirm-btn,
+.sure-btn,
+.close-btn {
+  border: "1px solid rgba(0, 0, 0, 0.2)";
+  padding: 10px 18px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reminder-options button:hover {
+  background-color: #dd6b20;
+  transform: scale(1.05);
+}
+
+/* Confirmation Section */
+.confirmation,
+.final-confirmation {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: #1a202c;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Confirm & Sure Button */
+.confirm-btn,
+.sure-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #38a169;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.confirm-btn:hover,
+.sure-btn:hover {
+  background-color: #2f855a;
+  transform: scale(1.05);
+}
+
+/* Close Button */
+.close-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 16px;
+  background-color: #e53e3e;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.close-btn:hover {
+  background-color: #c53030;
+  transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.contest-link {
+  font-weight: bold; /* Makes the text bold */
+  color: rgb(19, 19, 220); /* Sets the text color to dark blue */
+  text-decoration: none; /* Removes underline */
+}
+
+.contest-link:hover {
+  text-decoration: underline; /* Adds underline on hover */
+}
