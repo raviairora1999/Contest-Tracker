@@ -1,9 +1,12 @@
-**Hey there CP Mates **
+Hey there, CP Mates! 👋
 
-Welcome to Contest Tracker 
+Welcome to Contest Tracker 🎯
 
+The Contest Tracker website is designed to help competitive programmers stay updated with upcoming and past contests from LeetCode, CodeChef, and Codeforces. It provides a centralized interface where users can view contest schedules and set customizable email reminders before contests start.
 
-The Contest Tracker website is designed to help competitive programmers stay updated with upcoming and past contests from LeetCode, CodeChef, and Codeforces. It provides a centralized interface where users can view contest schedules and create customizable email reminders before contests start.
+📅 Never miss a contest again! Set reminders and stay ahead in your CP journey.
+
+🔗 Check it out here: www.xyz.com 🚀🔥
 ![image](https://github.com/user-attachments/assets/a736845a-628c-4572-83d5-c74c4ae069cf)
 
 
