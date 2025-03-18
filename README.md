@@ -10,10 +10,11 @@ The Contest Tracker website is designed to help competitive programmers stay upd
 
 
 
-Key Features
-📅 Upcoming & Past Contests: Users can check past contests for reference and upcoming contests to plan their participation.
-⏰ Email Reminders: Users can opt to receive reminders 15, 30, 45, or 60 minutes before a contest starts.
-🔗 Multi-Platform Support: The website integrates with LeetCode, CodeChef, and Codeforces to fetch and display contest details automatically.
-🚀 User-Friendly Interface: A clean and minimal UI ensures easy navigation and quick access to contest information.
+## Key Features  
+
+- 📅 **Upcoming & Past Contests**: Users can check past contests for reference and upcoming contests to plan their participation.  
+- ⏰ **Email Reminders**: Users can opt to receive reminders **15, 30, 45, or 60 minutes** before a contest starts.  
+- 🔗 **Multi-Platform Support**: The website integrates with **LeetCode, CodeChef, and Codeforces** to fetch and display contest details automatically.  
+- 🚀 **User-Friendly Interface**: A clean and minimal UI ensures easy navigation and quick access to contest information.  
 
 You can check out it here -  www.xyz.com
