@@ -1,4 +1,4 @@
-Hey there CP Mates 
+**Hey there CP Mates **
 
 Welcome to Contest Tracker 
 
